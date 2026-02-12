@@ -1,0 +1,29 @@
+# Сборка
+#build/
+#bin/
+#obj/
+
+# Временные файлы CMake
+#CMakeFiles/
+#CMakeCache.txt
+#CMakeLists.txt.user
+#cmake_install.cmake
+
+# Исполняемые файлы (если они создаются в корне)
+#pass_manager
+#*.exe
+#*.out
+
+# Локальные базы данных с паролями (ВАЖНО!)
+#*.db
+#*.txt
+#!README.txt
+
+# Настройки редакторов
+#.vscode/
+#.idea/
+#.vs/
+#*.swp
+
+#merge_cpp.sh
+#full_project.txt
