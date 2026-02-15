@@ -70,6 +70,10 @@ int main() {
                 vault.listAll();
                 break;
             }
+            default: {
+                std::cout << "Invalid choice." << std::endl;
+                break;
+            }
         }
     }
     return 0;
