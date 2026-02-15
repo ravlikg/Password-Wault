@@ -29,16 +29,15 @@ The project follows a modular design:
 
 ```bash
 git clone https://github.com/ravlikg/Password-Wault.git
-cd PassLocker-CPP
 mkdir build && cd build
 cmake ..
-cmake --build .
+make
 ```
 
 ### Running
 
 ```bash
-./PassLocker
+./pass_manager
 ```
 
 ## Security Note
