@@ -26,5 +26,5 @@ build/
 *.swp
 *.swo
 
-merge_cpp.sh
-full_project.txt
+./merge_cpp.sh
+./full_project.txt
