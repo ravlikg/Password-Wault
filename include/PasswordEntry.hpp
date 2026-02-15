@@ -2,7 +2,6 @@
 
 #include <string>
 #include "ICipher.hpp"
-#include <XorCipher.hpp>
 
 class PasswordEntry{
 private:
