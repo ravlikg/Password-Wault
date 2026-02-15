@@ -20,6 +20,12 @@ Vault::Vault(std::unique_ptr<ICipher> cipher)
     this->cipher = std::move(cipher);
 }
 
+void Vault::listAll() const{
+    for(const auto& entry : entries){
+        entry.display();
+    }
+}
+
 void Vault::addEntry(
     const std::string& source,
     const std::string& login,

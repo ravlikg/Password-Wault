@@ -9,9 +9,13 @@ class Vault{
 private:
     std::unique_ptr<ICipher> cipher;
     std::vector<PasswordEntry> entries;
+    
+    std::vector<PasswordEntry>::const_iterator Vault::findEntryIter(const std::string &service) const;
 
 public:
     Vault(std::unique_ptr<ICipher> cipher);
+
+    void listAll() const;
 
     void addEntry(
         const std::string& source,
@@ -19,7 +23,8 @@ public:
         const std::string& password,
         const std::string& master_key
     );
-
+    void deleteEntry(const std::string& source);
+    std::vector<PasswordEntry>::const_iterator findEntryIter(const std::string &service) const;
     const PasswordEntry* findEntry(const std::string& service) const;
 
     void saveToFile(const std::string& filename) const;
